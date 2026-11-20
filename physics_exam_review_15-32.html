@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7faff">
+<title>مراجعة الفيزياء | الصفحات 15–32</title>
+<style>
+:root{--ink:#172746;--muted:#64748b;--blue:#3867e8;--blue2:#eaf0ff;--mint:#159b78;--mintbg:#e9f8f2;--gold:#d18a22;--goldbg:#fff6e8;--purple:#7953c6;--purplebg:#f3edff;--line:#e4eaf3;--paper:#fff;--bg:#f5f8fd;--shadow:0 12px 34px rgba(34,63,112,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% 0%,#e9f1ff 0,transparent 27rem),var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.85}
+button{font:inherit;cursor:pointer}.wrap{max-width:1120px;margin:auto;padding:24px 18px 70px}
+.hero{position:relative;overflow:hidden;border:1px solid #dce7fb;border-radius:28px;padding:34px;background:linear-gradient(125deg,#fff 0%,#f0f5ff 58%,#e9f8f3 100%);box-shadow:var(--shadow)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:#dce8ff88;animation:float 7s ease-in-out infinite}.hero:before{width:190px;height:190px;left:-48px;top:-75px}.hero:after{width:100px;height:100px;right:44%;bottom:-65px;background:#c9f0e288;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-15px) translateX(8px)}}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f7;border-radius:99px;padding:5px 13px;color:#4265b7;font-size:13px;font-weight:bold}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.3;margin:15px 0 8px;position:relative}h1 span{color:var(--blue)}.hero p{color:#536681;max-width:650px;margin:0;position:relative}.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;position:relative}.pill{background:#fff;border:1px solid var(--line);padding:7px 12px;border-radius:12px;font-size:13px;color:#52637e}
+.topbar{position:sticky;top:8px;z-index:20;margin:18px 0;padding:8px;background:#ffffffdf;backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:17px;box-shadow:0 5px 18px #28466b0b;display:flex;gap:7px;overflow:auto}
+.topbar a{white-space:nowrap;text-decoration:none;color:#53637b;padding:8px 13px;border-radius:11px;font-size:13px;font-weight:bold}.topbar a:hover{background:var(--blue2);color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.card{background:var(--paper);border:1px solid var(--line);border-radius:21px;padding:22px;box-shadow:var(--shadow);margin:15px 0;animation:rise .65s both}@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+h2{font-size:25px;margin:0 0 13px}h3{font-size:18px;margin:17px 0 7px}p{margin:7px 0}.muted{color:var(--muted)}.tag{display:inline-block;font-size:12px;font-weight:bold;color:#3159bd;background:var(--blue2);border-radius:8px;padding:3px 9px;margin-bottom:8px}
+.note{padding:14px 16px;border-radius:15px;background:#f1f5ff;border:1px solid #e0e9ff;margin:12px 0}.note.green{background:var(--mintbg);border-color:#d4f0e4}.note.gold{background:var(--goldbg);border-color:#f8e8c9}.note.purple{background:var(--purplebg);border-color:#e6dcfb}
+.definition{border-right:4px solid var(--blue);padding:4px 14px;margin:12px 0}.formula{direction:ltr;text-align:center;font-size:23px;font-weight:bold;color:#254fb5;background:#f4f7ff;border:1px dashed #cbd8fa;padding:13px;border-radius:14px;margin:12px 0;font-family:Arial,sans-serif}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;background:white;border-radius:12px;overflow:hidden}th{background:#edf2ff;color:#294d9a}td,th{padding:10px;border-bottom:1px solid var(--line);text-align:center}
+ul,ol{padding-right:22px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{padding:15px;border-radius:16px;background:#f7f9fd;border:1px solid var(--line)}.mini h3{margin-top:0}
+.diagram{width:100%;max-height:210px;display:block;margin:12px auto;background:#fbfcff;border:1px solid var(--line);border-radius:16px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.tab{border:1px solid var(--line);background:#fff;color:#5b6880;border-radius:12px;padding:9px 14px}.tab.active{background:var(--blue);color:white;border-color:var(--blue)}
+.panel{display:none}.panel.active{display:block;animation:fade .3s}@keyframes fade{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:none}}
+.interactive{background:linear-gradient(135deg,#f6f9ff,#fff);border:1px solid #dce6fa;border-radius:18px;padding:17px;margin:13px 0}
+input,select{border:1px solid #d8e1ef;border-radius:10px;padding:10px;background:white;color:var(--ink);font:inherit;max-width:100%}.action{border:0;border-radius:11px;background:var(--blue);color:white;padding:10px 16px;font-weight:bold}.action.secondary{background:#edf2ff;color:#3159bd;border:1px solid #d9e4ff}.result{font-weight:bold;color:#137b5e;margin-top:10px;min-height:28px}
+.question{padding:15px;border:1px solid var(--line);border-radius:15px;margin:12px 0;background:#fff}.question p{font-weight:bold}.options{display:grid;gap:7px}.options label{display:flex;gap:9px;align-items:center;padding:8px 10px;border:1px solid #e7ebf2;border-radius:10px;cursor:pointer}.options label:hover{background:#f5f8ff}.feedback{font-size:13px;margin-top:8px;font-weight:bold}.correct{color:#11805e}.wrong{color:#c04444}
+.progress{height:9px;background:#e8edf6;border-radius:99px;overflow:hidden}.progress span{display:block;height:100%;background:linear-gradient(90deg,#4774ee,#26b58b);width:0;transition:width .4s}
+.flash{min-height:145px;display:grid;place-items:center;text-align:center;background:#fff;border:1px solid #dce5f5;border-radius:17px;padding:20px;cursor:pointer;transition:.25s}.flash:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.flash strong{font-size:22px;color:var(--blue)}
+footer{text-align:center;color:#7b879a;font-size:13px;padding:28px 10px}
+@media(max-width:720px){.grid,.two{grid-template-columns:1fr}.hero{padding:25px 20px}.card{padding:17px}.topbar{top:4px}h2{font-size:22px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+ <span class="kicker">✦ دليل مذاكرة تفاعلي • فيزياء (1)</span>
+ <h1>مراجعة <span>الفيزياء</span><br>من الصفحة 15 إلى 32</h1>
+ <p>ملخص مرتب وسهل للفهم والحفظ، مع القوانين والأمثلة المحلولة وبطاقات مراجعة واختبار ذاتي. كل المحتوى ضمن الصفحات المحددة من كتابك.</p>
+ <div class="hero-meta"><span class="pill">📘 الفصل الثاني: المتجهات</span><span class="pill">🧭 الفصل الثالث: وصف الحركة – البداية</span><span class="pill">☀️ تصميم فاتح ومريح</span></div>
+</header>
+<nav class="topbar">
+ <a href="#scope">النطاق</a><a href="#quantities">الكميات</a><a href="#vectors">المتجهات</a><a href="#addition">جمع المتجهات</a><a href="#motion">الحركة</a><a href="#speed">السرعة</a><a href="#practice">تدريب</a><a href="#quiz">اختبر نفسك</a>
+</nav>
+
+<section id="scope" class="card">
+ <span class="tag">خريطة المحتوى</span><h2>ماذا يشمل الامتحان؟</h2>
+ <div class="grid">
+  <div class="mini"><h3>01 · ص 15–18</h3><p>بقية موضوع القياس: الكتلة والزمن، الكميات الأساسية والمشتقة، واشتقاق الوحدات.</p></div>
+  <div class="mini"><h3>02 · ص 19–24</h3><p>الفصل الثاني: الكميات القياسية والمتجهة، رسم المتجهات، خصائصها، والجمع البياني.</p></div>
+  <div class="mini"><h3>03 · ص 25–28</h3><p>جمع المتجهات حسابياً: الاتجاه نفسه، المتعاكسة، والمتعامدة.</p></div>
+  <div class="mini"><h3>04 · ص 29–32</h3><p>بداية الفصل الثالث: الموضع والمسافة والإزاحة والسرعة المتوسطة.</p></div>
+ </div>
+ <div class="note gold"><b>تنبيه مهم:</b> هذا الملخص يتوقف عند السرعة المتوسطة كما وردت في الصفحة 32. لا يتضمن السرعة اللحظية أو التسارع؛ فهما في الصفحات التالية خارج النطاق المطلوب.</div>
+</section>
+
+<section id="quantities" class="card">
+ <span class="tag">ص 15–18</span><h2>1. الكتلة والزمن والكميات الفيزيائية</h2>
+ <div class="two">
+  <div class="mini"><h3>الكتلة</h3><p>هي مقدار ما في الجسم من مادة.</p><p><b>أداة القياس:</b> الميزان ذو الكفتين أو الموازين الحساسة.</p><p><b>وحدة النظام الدولي:</b> الكيلوغرام (كغم).</p></div>
+  <div class="mini"><h3>الزمن</h3><p>يقاس بالثانية أو أجزائها أو مضاعفاتها.</p><p>الثانية هي وحدة الزمن في النظام الدولي.</p><p><b>تحويلات:</b> الدقيقة = 60 ثانية، الساعة = 3600 ثانية، اليوم = 86400 ثانية.</p></div>
+ </div>
+ <h3>الكميات الأساسية والمشتقة</h3>
+ <div class="definition"><b>الكميات الأساسية:</b> كميات لا يوجد أبسط منها، وتعد أساساً لكميات فيزيائية أخرى.</div>
+ <div class="definition"><b>الكميات المشتقة:</b> كميات يتم الحصول عليها من الكميات الأساسية، مثل الكثافة والسرعة والقوة.</div>
+ <table><thead><tr><th>الكمية الأساسية</th><th>وحدة النظام الدولي</th><th>رمز/اختصار الوحدة</th></tr></thead><tbody>
+ <tr><td>الطول</td><td>متر</td><td>م</td></tr><tr><td>الكتلة</td><td>كيلوغرام</td><td>كغم</td></tr><tr><td>الزمن</td><td>ثانية</td><td>ث</td></tr><tr><td>شدة التيار الكهربائي</td><td>أمبير</td><td>أمبير</td></tr><tr><td>شدة الإضاءة</td><td>كاندلا (شمعة)</td><td>كاندلا</td></tr><tr><td>كمية المادة</td><td>مول</td><td>مول</td></tr><tr><td>درجة الحرارة</td><td>كلفن</td><td>ك</td></tr></tbody></table>
+ <h3>اشتقاق الوحدات</h3><p>نشتق وحدة الكمية المشتقة من العلاقة الرياضية التي تربطها بالكميات الأساسية.</p>
+ <div class="grid">
+  <div class="mini"><b>السرعة</b><div class="formula">السرعة = المسافة ÷ الزمن</div><p>وحدتها: م/ث</p></div>
+  <div class="mini"><b>التسارع (ورد كوحدة مشتقة في المثال)</b><div class="formula">التسارع = السرعة ÷ الزمن</div><p>وحدته: م/ث²</p></div>
+  <div class="mini"><b>الكثافة</b><div class="formula">الكثافة = الكتلة ÷ الحجم</div></div>
+  <div class="mini"><b>القوة</b><div class="formula">القوة = الكتلة × التسارع</div></div>
+  <div class="mini"><b>الضغط</b><div class="formula">الضغط = القوة ÷ المساحة</div></div>
+  <div class="mini"><b>الشحنة الكهربائية</b><div class="formula">الشحنة = التيار × الزمن</div></div>
+ </div>
+ <div class="note"><b>طريقة الحل في الاشتقاق:</b> اكتب العلاقة أولاً، ثم استبدل كل كمية بوحدة قياسها، وبعدها بسّط الوحدات.</div>
+</section>
+
+<section id="vectors" class="card">
+ <span class="tag">ص 19–22</span><h2>2. الكميات القياسية والمتجهة ورسم المتجهات</h2>
+ <div class="two">
+  <div class="mini"><h3>الكمية القياسية</h3><p>تحدد بمقدار ووحدة قياس مناسبة، دون الحاجة إلى تحديد الاتجاه.</p><p><b>أمثلة الكتاب:</b> درجة الحرارة والزمن والكتلة.</p></div>
+  <div class="mini"><h3>الكمية المتجهة</h3><p>توصف بتحديد الاتجاه إضافة إلى المقدار ووحدة القياس.</p><p><b>أمثلة الكتاب:</b> السرعة والتسارع والقوة والوزن.</p></div>
+ </div>
+ <h3>كيف نرسم المتجه؟</h3>
+ <ol><li>نحدد نقطة الإسناد، والنقطة (0،0) نقطة الإسناد للمستوى الديكارتي.</li><li>نحدد مقدار المتجه بطول القطعة المستقيمة، مع اختيار مقياس رسم مناسب.</li><li>نحدد الاتجاه جغرافياً: شمال، جنوب، شرق، غرب، أو الاتجاهات الفرعية.</li><li>نرسم سهماً يبدأ من ذيل المتجه عند نقطة الإسناد وينتهي برأس المتجه.</li></ol>
+ <svg class="diagram" viewBox="0 0 600 190" role="img" aria-label="اتجاهات البوصلة">
+  <g transform="translate(300 95)" stroke="#3867e8" stroke-width="2" fill="none"><circle r="65" stroke="#d8e2f4"/><path d="M0 -80V80 M-80 0H80 M-56 -56L56 56 M56 -56L-56 56" stroke="#b9c9e8"/><path d="M0 -58L-9 -35L0 -42L9 -35Z" fill="#3867e8"/><path d="M0 58L-9 35L0 42L9 35Z" fill="#9aa9c2"/></g>
+  <g fill="#243b65" font-size="15" font-weight="bold" text-anchor="middle"><text x="300" y="18">شمال</text><text x="300" y="184">جنوب</text><text x="390" y="100">شرق</text><text x="210" y="100">غرب</text><text x="356" y="43">شمال شرقي</text><text x="244" y="43">شمال غربي</text><text x="356" y="160">جنوب شرقي</text><text x="244" y="160">جنوب غربي</text></g>
+ </svg>
+ <div class="note green"><b>مثال الكتاب:</b> متجه طوله 5 وحدات باتجاه الشمال الغربي. نحدد نقطة الإسناد، ثم نقيس زاوية 45° من الشمال باتجاه الغرب، ونرسم سهماً طوله 5 وحدات.</div>
+ <h3>خصائص المتجهات</h3>
+ <div class="mini"><b>تكافؤ المتجهات:</b> يتساوى متجهان إذا كان لهما المقدار نفسه والاتجاه نفسه.</div>
+ <div class="mini"><b>الضرب في عدد:</b> طول المتجه الجديد يساوي العدد مضروباً في طول المتجه الأصلي. إذا كان العدد أكبر من 1 يزداد الطول، وإذا كان بين صفر وواحد يقل الطول مع بقاء الاتجاه، وإذا كان سالباً ينعكس الاتجاه.</div>
+ <div class="mini"><b>معكوس المتجه:</b> له مقدار المتجه الأصلي نفسه ويعاكسه في الاتجاه؛ الزاوية بين المتجه ومعكوسه 180°.</div>
+ <div class="note"><b>مثال الكتاب:</b> متجه طوله 15 وحدة شرقاً؛ ثلثه = 5 وحدات شرقاً. ومتجه طوله 20 وحدة جنوب غرب؛ فإن −2 من المتجه = 40 وحدة شمال شرق.</div>
+</section>
+
+<section id="addition" class="card">
+ <span class="tag">ص 22–28</span><h2>3. جمع المتجهات</h2>
+ <p><b>المحصلة:</b> متجه واحد يمكن أن يحل محل مجموعة متجهات ويؤدي العمل نفسه.</p>
+ <div class="note gold">شرط مهم: يجب أن يكون المتجهان من النوع نفسه؛ فلا يمكن جمع متجه قوة مع متجه سرعة.</div>
+ <h3>أولاً: الجمع بيانياً – طريقة متوازي الأضلاع</h3>
+ <ol><li>نرسم المتجهين من نقطة الإسناد نفسها.</li><li>نرسم من رأس كل متجه خطاً موازياً للمتجه الآخر لإكمال متوازي الأضلاع.</li><li>نرسم القطر من ذيل المتجهين إلى الرأس المقابل؛ وهو المحصلة.</li><li>نقيس طول المحصلة بالمسطرة ونستخدم مقياس الرسم.</li><li>نحدد اتجاهها بقياس الزاوية بالمنقلة.</li></ol>
+ <svg class="diagram" viewBox="0 0 600 240" aria-label="جمع متجهين بمتوازي الأضلاع">
+  <defs><marker id="arrb" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="#3867e8"/></marker><marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="#159b78"/></marker></defs>
+  <g transform="translate(130 190)" fill="none" stroke-width="4"><path d="M0 0H250" stroke="#3867e8" marker-end="url(#arrb)"/><path d="M0 0V-145" stroke="#159b78" marker-end="url(#arrg)"/><path d="M250 0V-145H0" stroke="#a8b8d4" stroke-dasharray="6 5"/><path d="M0 0L250 -145" stroke="#7953c6" stroke-width="5"/></g>
+  <g font-size="17" font-weight="bold"><text x="395" y="210" fill="#3867e8">أ</text><text x="112" y="43" fill="#159b78">ب</text><text x="285" y="90" fill="#7953c6">المحصلة</text></g>
+ </svg>
+ <h3>ثانياً: الجمع حسابياً</h3>
+ <div class="grid">
+  <div class="mini"><h3>الاتجاه نفسه (0°)</h3><p>نجمع المقدارين وتكون المحصلة في الاتجاه نفسه.</p><div class="formula">ح = أ + ب</div><p>مثال: 100 + 50 = 150 نيوتن شرقاً.</p></div>
+  <div class="mini"><h3>اتجاهان متعاكسان (180°)</h3><p>نطرح الأصغر من الأكبر، وتكون المحصلة باتجاه الأكبر.</p><div class="formula">ح = الأكبر − الأصغر</div><p>مثال: 400 غرباً و200 شرقاً = 200 نيوتن غرباً.</p></div>
+  <div class="mini"><h3>متعامدان (90°)</h3><p>نستخدم نظرية فيثاغورس لإيجاد مقدار المحصلة.</p><div class="formula">ح = √(أ² + ب²)</div><p>الاتجاه يحسب بظل الزاوية.</p></div>
+ </div>
+ <div class="note green"><b>مثال الكتاب للمتعامدين:</b> 3 م/ث شرقاً و4 م/ث شمالاً.</div>
+ <div class="formula">ح = √(3² + 4²) = 5 م/ث</div>
+ <div class="formula">ظا θ = 4 ÷ 3  →  θ ≈ 53° مع الشرق</div>
+ <h3>آلة تدريب لحساب المحصلة</h3>
+ <div class="interactive">
+  <p>أدخل مقدار المتجه الأول والثاني، ثم اختر العلاقة بين اتجاهيهما:</p>
+  <div class="two"><label>المتجه الأول<br><input id="va" type="number" min="0" value="3"></label><label>المتجه الثاني<br><input id="vb" type="number" min="0" value="4"></label></div>
+  <p><select id="relation"><option value="same">الاتجاه نفسه</option><option value="opposite">اتجاهان متعاكسان</option><option value="right" selected>متعامدان</option></select></p>
+  <button class="action" onclick="calcVectors()">احسب المحصلة</button><div id="vectorResult" class="result" aria-live="polite">المحصلة ستظهر هنا.</div>
+ </div>
+</section>
+
+<section id="motion" class="card">
+ <span class="tag">ص 29–31</span><h2>4. الموضع والمسافة والإزاحة</h2>
+ <div class="definition"><b>متجه الموضع:</b> المتجه الواصل بين نقطة البداية (نقطة الإسناد) وموضع الجسم.</div>
+ <div class="two">
+  <div class="mini"><h3>المسافة</h3><p>طول المسار الحقيقي الذي يسلكه الجسم خلال حركته.</p><p>كمية قياسية، ولا تحتاج إلى اتجاه.</p></div>
+  <div class="mini"><h3>الإزاحة</h3><p>التغير في موضع الجسم، ويعبر عنها بالمتجه الواصل بين نقطة البداية ونقطة النهاية.</p><p>كمية متجهة ولها اتجاه.</p></div>
+ </div>
+ <svg class="diagram" viewBox="0 0 600 190" aria-label="الفرق بين المسافة والإزاحة">
+  <circle cx="75" cy="130" r="7" fill="#159b78"/><circle cx="520" cy="130" r="7" fill="#d18a22"/>
+  <path d="M75 130 C150 5 240 185 315 80 S430 30 520 130" stroke="#d18a22" stroke-width="5" fill="none" stroke-dasharray="8 6"/>
+  <path d="M75 130H510" stroke="#3867e8" stroke-width="4"/><path d="M500 121L516 130L500 139" fill="none" stroke="#3867e8" stroke-width="4"/>
+  <g font-size="16" font-weight="bold"><text x="75" y="160" text-anchor="middle" fill="#159b78">البداية</text><text x="520" y="160" text-anchor="middle" fill="#d18a22">النهاية</text><text x="300" y="24" text-anchor="middle" fill="#a36b17">المسافة: المسار الفعلي</text><text x="300" y="118" text-anchor="middle" fill="#3867e8">الإزاحة: خط مستقيم</text></g>
+ </svg>
+ <h3>مثال الكتاب 1</h3><p>طفل تحرك 10 م شرقاً ثم رجع 7 م غرباً.</p>
+ <div class="formula">المسافة = 10 + 7 = 17 م</div><div class="formula">الإزاحة = 10 − 7 = 3 م شرقاً</div>
+ <h3>مثال الكتاب 2: دورة كاملة حول دوار</h3><p>نصف قطر الدوار 5 م، والسيارة أكملت دورة كاملة.</p>
+ <div class="formula">المسافة = محيط الدائرة = 2 × π × نق</div><div class="formula">= 2 × 3.14 × 5 = 31.4 م</div>
+ <div class="note green"><b>الإزاحة = صفر</b> لأن نقطة البداية هي نفسها نقطة النهاية.</div>
+ <div class="note gold"><b>تذكر:</b> يمكن أن تكون الإزاحة صفراً مع أن المسافة ليست صفراً، إذا عاد الجسم إلى نقطة البداية.</div>
+</section>
+
+<section id="speed" class="card">
+ <span class="tag">ص 32</span><h2>5. السرعة المتوسطة</h2>
+ <p>السرعة المتوسطة هي الإزاحة الكلية مقسومة على الزمن اللازم لحدوثها، وهي كمية متجهة وتكون باتجاه الإزاحة نفسها.</p>
+ <div class="formula">ع̄ = Δف ÷ Δز</div>
+ <ul><li><b>ع̄:</b> السرعة المتوسطة (م/ث).</li><li><b>Δف:</b> الإزاحة (م).</li><li><b>Δز:</b> الزمن (ث).</li></ul>
+ <div class="note">انتبه: القانون في الكتاب يعتمد على <b>الإزاحة</b> وليس طول المسار؛ لذلك لا تخلط السرعة المتوسطة المتجهة بالمسافة المقطوعة على الزمن.</div>
+ <h3>مثال توضيحي من نشاط الكتاب</h3>
+ <p>سيارتان تقطعان إزاحة 30 كم شرقاً؛ الحمراء في 30 دقيقة والزرقاء في 40 دقيقة. بما أن الإزاحة متساوية، فالسيارة الحمراء أسرع لأنها قطعتها في زمن أقل.</p>
+ <p>في حالة ثبات الزمن 30 دقيقة: الحمراء تقطع 20 كم والزرقاء 30 كم؛ الزرقاء أسرع لأنها حققت إزاحة أكبر في الزمن نفسه.</p>
+ <h3>مثال حسابي</h3>
+ <p>إذا كانت الإزاحة 30 كم شرقاً والزمن 30 دقيقة، نحول أولاً إلى وحدات النظام الدولي:</p>
+ <div class="formula">30 كم = 30000 م &nbsp; | &nbsp; 30 دقيقة = 1800 ث</div>
+ <div class="formula">ع̄ = 30000 ÷ 1800 ≈ 16.67 م/ث شرقاً</div>
+ <div class="interactive">
+  <h3 style="margin-top:0">احسب السرعة المتوسطة بنفسك</h3>
+  <div class="two"><label>الإزاحة بالمتر<br><input type="number" id="disp" value="100" min="0"></label><label>الزمن بالثانية<br><input type="number" id="time" value="20" min="0.001"></label></div>
+  <p><button class="action" onclick="calcSpeed()">احسب السرعة</button></p><div class="result" id="speedResult" aria-live="polite">النتيجة ستظهر هنا.</div>
+ </div>
+</section>
+
+<section id="practice" class="card">
+ <span class="tag">مراجعة سريعة</span><h2>بطاقات الحفظ</h2>
+ <p class="muted">اضغط على البطاقة لتظهر الإجابة، ثم انتقل إلى البطاقة التالية.</p>
+ <div class="flash" id="flash" onclick="flipFlash()"><div><strong id="flashTitle">ما الكمية القياسية؟</strong><p id="flashText" class="muted">اضغط لإظهار الإجابة</p></div></div>
+ <div class="tabs" style="justify-content:center"><button class="action secondary" onclick="prevFlash()">السابق</button><button class="action" onclick="nextFlash()">التالي</button></div>
+ <p class="muted" id="flashCount" style="text-align:center">1 / 8</p>
+</section>
+
+<section id="quiz" class="card">
+ <span class="tag">اختبر فهمك</span><h2>اختبار قصير من نطاق الصفحات</h2>
+ <p>اختر الإجابة الصحيحة لكل سؤال ثم اضغط «صحّح إجاباتي».</p>
+ <div class="progress"><span id="quizProgress"></span></div><p class="muted" id="answeredCount">تمت الإجابة عن 0 من 8</p>
+ <div id="quizQuestions"></div>
+ <button class="action" onclick="gradeQuiz()">صحّح إجاباتي</button> <button class="action secondary" onclick="resetQuiz()">إعادة الاختبار</button>
+ <div id="quizScore" class="result" aria-live="polite"></div>
+</section>
+<footer>تم إعداد هذا الدليل اعتماداً على كتاب فيزياء (1)، الصفحات المطبوعة 15–32 فقط. بالتوفيق في امتحانك 🌟</footer>
+</div>
+<script>
+function calcVectors(){let a=Number(document.getElementById('va').value),b=Number(document.getElementById('vb').value),r=document.getElementById('relation').value,out=document.getElementById('vectorResult');if(a<0||b<0||!Number.isFinite(a+b)){out.textContent='أدخل مقدارين صحيحين غير سالبين.';return}let m,t='';if(r==='same'){m=a+b;t='في الاتجاه نفسه'}else if(r==='opposite'){m=Math.abs(a-b);t=a===b?'المحصلة صفر':(a>b?'باتجاه المتجه الأول':'باتجاه المتجه الثاني')}else{m=Math.hypot(a,b);t='والاتجاه يحدد بظل الزاوية'}out.textContent='مقدار المحصلة = '+Number(m.toFixed(3))+' وحدة؛ '+t+'.'}
+function calcSpeed(){let d=Number(document.getElementById('disp').value),t=Number(document.getElementById('time').value),o=document.getElementById('speedResult');if(d<0||t<=0||!Number.isFinite(d+t)){o.textContent='تأكد من إدخال إزاحة غير سالبة وزمن أكبر من صفر.';return}o.textContent='السرعة المتوسطة = '+(d/t).toFixed(2)+' م/ث، واتجاهها اتجاه الإزاحة.'}
+const cards=[['ما الكمية القياسية؟','كمية تحدد بمقدار ووحدة قياس دون الحاجة إلى تحديد الاتجاه.'],['ما الكمية المتجهة؟','كمية توصف بالمقدار ووحدة القياس والاتجاه.'],['ما تكافؤ المتجهات؟','أن يكون للمتجهين المقدار نفسه والاتجاه نفسه.'],['ما معكوس المتجه؟','متجه له المقدار نفسه ويعاكسه في الاتجاه، والزاوية بينهما 180°.'],['ما المحصلة؟','متجه واحد يقوم بعمل مجموعة المتجهات نفسها.'],['ما المسافة؟','طول المسار الحقيقي الذي يسلكه الجسم.'],['ما الإزاحة؟','التغير في موضع الجسم، وتمثل المتجه الواصل بين البداية والنهاية.'],['ما السرعة المتوسطة؟','الإزاحة الكلية مقسومة على الزمن اللازم لحدوثها.']];
+let fi=0,flipped=false;function drawFlash(){document.getElementById('flashTitle').textContent=cards[fi][0];document.getElementById('flashText').textContent=flipped?cards[fi][1]:'اضغط لإظهار الإجابة';document.getElementById('flashCount').textContent=(fi+1)+' / '+cards.length}function flipFlash(){flipped=!flipped;drawFlash()}function nextFlash(){fi=(fi+1)%cards.length;flipped=false;drawFlash()}function prevFlash(){fi=(fi-1+cards.length)%cards.length;flipped=false;drawFlash()}drawFlash();
+const qs=[
+['أي مما يلي كمية قياسية؟',['القوة','الوزن','الكتلة','الإزاحة'],2,'الكتلة توصف بمقدار ووحدة قياس فقط.'],
+['الكميات المشتقة هي كميات:',['لا يوجد أبسط منها','تشتق من الكميات الأساسية','لا تقاس','تحتاج إلى اتجاه دائماً'],1,'مثل السرعة والكثافة والقوة.'],
+['متجهان متكافئان لهما:',['المقدار نفسه والاتجاه نفسه','المقدار نفسه واتجاهان متعاكسان','مقداران مختلفان','الاتجاه نفسه فقط'],0,'هذا هو تعريف تكافؤ المتجهات في الكتاب.'],
+['متجه طوله 15 وحدة شرقاً، ثلثه يساوي:',['5 وحدات شرقاً','5 وحدات غرباً','45 وحدة شرقاً','15 وحدة'],0,'15 ÷ 3 = 5، والاتجاه يبقى شرقاً.'],
+['متجهان 8 و3 في اتجاهين متعاكسين؛ مقدار المحصلة:',['11','24','5','صفر'],2,'نطرح الأصغر من الأكبر: 8 − 3 = 5.'],
+['متجهان متعامدان مقدارهما 3 و4؛ المحصلة:',['7','1','12','5'],3,'باستخدام فيثاغورس: الجذر التربيعي لـ 9 + 16 = 5.'],
+['تحرك جسم 10 م شرقاً ثم 7 م غرباً؛ إزاحته:',['17 م شرقاً','3 م شرقاً','3 م غرباً','17 م غرباً'],1,'الإزاحة = 10 − 7 = 3 م شرقاً.'],
+['في دورة كاملة يعود الجسم إلى نقطة البداية؛ إزاحته:',['محيط المسار','نصف المحيط','صفر','تساوي الزمن'],2,'لأن موضع البداية يساوي موضع النهاية.']
+];
+function buildQuiz(){let host=document.getElementById('quizQuestions');host.innerHTML='';qs.forEach((q,i)=>{let d=document.createElement('div');d.className='question';d.innerHTML='<p>'+(i+1)+'. '+q[0]+'</p><div class="options">'+q[1].map((v,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'" onchange="updateProgress()"> '+v+'</label>').join('')+'</div><div class="feedback" id="fb'+i+'"></div>';host.appendChild(d)});updateProgress()}function updateProgress(){let n=qs.filter((q,i)=>document.querySelector('input[name=q'+i+']:checked')).length;document.getElementById('answeredCount').textContent='تمت الإجابة عن '+n+' من '+qs.length;document.getElementById('quizProgress').style.width=(n/qs.length*100)+'%'}function gradeQuiz(){let score=0;qs.forEach((q,i)=>{let sel=document.querySelector('input[name=q'+i+']:checked'),fb=document.getElementById('fb'+i);if(sel&&Number(sel.value)===q[2]){score++;fb.className='feedback correct';fb.textContent='✓ صحيح — '+q[3]}else{fb.className='feedback wrong';fb.textContent='✕ الإجابة الصحيحة: '+q[1][q[2]]+' — '+q[3]}});document.getElementById('quizScore').textContent='نتيجتك: '+score+' من '+qs.length+(score>=7?' — ممتاز، استمر!':score>=5?' — جيد، راجع الأسئلة التي أخطأت فيها.':' — راجع الملخص وحاول مرة أخرى.')}function resetQuiz(){document.querySelectorAll('#quizQuestions input').forEach(x=>x.checked=false);document.querySelectorAll('.feedback').forEach(x=>x.textContent='');document.getElementById('quizScore').textContent='';updateProgress()}buildQuiz();
+</script>
+</body></html>
